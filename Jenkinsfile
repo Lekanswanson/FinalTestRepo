@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'We Are Not Building..'
 		sleep 5
             }
         }
@@ -34,6 +34,7 @@ pipeline {
             steps {
                 sh 'pwd'
 		sh 'ls -al'
+		sh 'git branch'
 		echo "Done"
                 sleep 5
             }
