@@ -24,5 +24,11 @@ pipeline {
 		sleep 5
             }
         }
+        stage('Parameter') {
+            steps {
+                echo "$PUBLISH"
+                sleep 5
+            }
+        }
     }
 }
