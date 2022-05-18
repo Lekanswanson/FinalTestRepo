@@ -1,5 +1,9 @@
 pipeline {
-    agent GRIDENGINE
+    agent {
+	node {
+	    label 'GRIDENGINE'
+	}
+    }
 
     stages {
         stage('Build') {
