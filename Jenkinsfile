@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent GRIDENGINE
 
     stages {
         stage('Build') {
