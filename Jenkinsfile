@@ -30,5 +30,13 @@ pipeline {
                 sleep 5
             }
         }
+        stage('PWD') {
+            steps {
+                pwd
+		ls -al
+                sleep 5
+            }
+        }
+
     }
 }
