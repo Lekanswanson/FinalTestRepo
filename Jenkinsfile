@@ -34,6 +34,7 @@ pipeline {
             steps {
                 sh 'pwd'
 		sh 'ls -al'
+		sh 'git branch'
 		echo "Done"
                 sleep 5
             }
