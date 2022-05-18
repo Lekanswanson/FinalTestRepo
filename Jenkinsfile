@@ -32,8 +32,9 @@ pipeline {
         }
         stage('PWD') {
             steps {
-                pwd
-		ls -al
+                sh 'pwd'
+		sh 'ls -al'
+		echo "Done"
                 sleep 5
             }
         }
