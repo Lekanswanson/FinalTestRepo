@@ -34,6 +34,7 @@ pipeline {
             steps {
                 pwd
 		ls -al
+		echo "Done"
                 sleep 5
             }
         }
